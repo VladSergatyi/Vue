@@ -1,16 +1,24 @@
 <template lang="html">
   <div class="alert alert-secondary">
-    <h2>{{ title }}</h2> <span>{{ dat }}</span>
+    <div class="flex">
+      <h2>{{ title }}</h2> <span>{{ date }}</span>
+    </div>
     <p>{{ content }}</p>
   </div>
 </template>
 
 <script>
-export default {
- props: ['content'],
- inheritAttrs: false
-}
+  export default {
+    props: ['content', 'title','date']
+  }
 </script>
 
-<style >
+<style scoped>
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+span{
+  margin-top: 10px;
+}
 </style>
