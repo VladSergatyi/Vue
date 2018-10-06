@@ -1,15 +1,15 @@
 <template lang="html">
   <div class="alert alert-secondary">
     <div class="flex">
-      <h2>{{ title }}</h2> <span>{{ date }}</span>
+      <h2>{{ news.title }}</h2> <span>{{ news.date }}</span>
     </div>
-    <p>{{ content }}</p>
+    <p>{{ news.content }}</p>
   </div>
 </template>
 
 <script>
   export default {
-    props: ['content', 'title','date']
+    props: ['news']
   }
 </script>
 

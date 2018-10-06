@@ -1,7 +1,7 @@
 <template>
   <div class="twit">
     <app-twit @onAdd()= 'add()'   v-on:enlarge-text="onEnlargeText"> </app-twit>
-    <app-twit-create v-for= 'count in news' :key="count.id" :date='count.date'  :title='count.title' :content= 'count.content'> </app-twit-create>
+    <app-twit-create v-for= 'count in news' :key="count.id" :news='count'> </app-twit-create>
   </div>
 </template>
 
